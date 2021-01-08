@@ -20,7 +20,7 @@ def getAnswer(answerNumber):
     elif answerNumber == 9:
         return 'Very doubtful.'
 
-def shake = '':
+shake = ''
 
 while shake =
 print('Type (s) to shake the magic 8 ball and see your fortune or press (q) to quit.')
