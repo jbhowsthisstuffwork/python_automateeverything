@@ -1,8 +1,9 @@
 # Create a program that allows a user to input an integer that calls a collatz()
 # function on that number until the function returns the value 1.
-import time
+import time,
 
 userInput = ''
+stepsToComplete = 0
 
 def collatz(number):
     global userInput
@@ -22,9 +23,10 @@ while userInput == '':
 
 while userInput != 1:
     collatz(userInput)
-    time.sleep(.25) #Pause for .25 seconds
+    stepsToComplete = stepsToComplete + 1
+#    time.sleep(.25) #Pause for .25 seconds
 else:
-    print(userInput)
+    print('You reached', userInput,'and it took',stepsToComplete,'steps to complete.')
 
         #if number = even, then print number // 2
         #if number = odd, then print 3 * number + 1
