@@ -28,4 +28,3 @@ print('Type (s) to shake the magic 8 ball and see your fortune or press (q) to q
 input(shake)
 if shake == 's':
     print(getAnswer(random.randint(1,9)))
-    else
